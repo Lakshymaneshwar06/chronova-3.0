@@ -1,0 +1,7 @@
+{
+  "name": "Chronova",
+  "description": "A modern dual-mode Event Portal and Study Material Hub with dynamic discovery, live countdowns, calendar timeline, and categorized academic resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

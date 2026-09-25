@@ -1,0 +1,97 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Luminous Chrono Arc Gradient -->
+    <linearGradient id="chronoArcVibrantGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="40%" stop-color="#6366f1" />
+      <stop offset="75%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+
+    <!-- Radiant Nova Star Gradient -->
+    <linearGradient id="novaStarVibrantGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="35%" stop-color="#f43f5e" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+
+    <!-- Dual Orbital Gyro Glow -->
+    <linearGradient id="orbitalRingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Background Badge Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Eye-Catching Rounded Badge -->
+  <rect width="100" height="100" rx="26" fill="url(#bgGrad)" stroke="#818cf8" stroke-width="2" stroke-opacity="0.4" />
+
+  <!-- Outer Orbit Gyro Ring -->
+  <circle
+    cx="50"
+    cy="50"
+    r="42"
+    stroke="url(#orbitalRingGrad)"
+    stroke-width="2.5"
+    stroke-dasharray="5 6"
+    opacity="0.8"
+  />
+
+  <!-- The Bold Chrono 'C' Arc -->
+  <path
+    d="M 72 20
+       C 64 12, 53 8, 41 8
+       C 18 8, 8 26, 8 50
+       C 8 74, 18 92, 41 92
+       C 54 92, 65 87, 73 78
+       L 63 68
+       C 57 74, 50 78, 41 78
+       C 27 78, 22 66, 22 50
+       C 22 34, 27 22, 41 22
+       C 49 22, 56 26, 62 31
+       Z"
+    fill="url(#chronoArcVibrantGrad)"
+  />
+
+  <!-- The Blazing 8-Point Diamond Nova Star -->
+  <path
+    d="M 58 50
+       Q 73 50, 84 50
+       Q 73 50, 58 50
+       Q 58 35, 58 20
+       Q 58 35, 58 50
+       Q 58 65, 58 80
+       Q 58 65, 58 50
+       Q 43 50, 32 50
+       Q 43 50, 58 50
+       Z"
+    fill="url(#novaStarVibrantGrad)"
+    filter="url(#starGlow)"
+  />
+
+  <!-- Diagonal Glints -->
+  <path
+    d="M 58 50 L 74 34 L 58 50 L 74 66 L 58 50 L 42 66 L 58 50 L 42 34 Z"
+    stroke="url(#novaStarVibrantGrad)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+
+  <!-- Specular Centers -->
+  <circle cx="58" cy="50" r="4" fill="#ffffff" />
+  <circle cx="58" cy="50" r="2" fill="#fde047" />
+  <circle cx="84" cy="50" r="2.2" fill="#22d3ee" />
+</svg>
